@@ -5,10 +5,15 @@ public class A {
 
     public A() {
         bObj = new B();
+        bObj.setId(1);
         bObj.setName("bName");
     }
 
-    public String getBObjName(){
+    public String displayBName() {
         return bObj.getName();
+    }
+
+    public B getBObj() {
+        return bObj;
     }
 }
